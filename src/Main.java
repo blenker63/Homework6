@@ -44,7 +44,8 @@ public class Main {
     public static void task5() {
         System.out.println("Задача 5");
         for (int i = 1904; i <= 2096; i = i + 4) {
-            System.out.println(i + " год является високосным"); // необходима проверка на каждые 100 и 400 лет
+            if ( i %4 == 0 && i %100 != 0 || i %400 ==0 )
+            System.out.println(i + " год является високосным"); 
         }
     }
 
