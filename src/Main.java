@@ -74,10 +74,12 @@ public class Main {
 
     public static void task9() {
         System.out.println("Задача 9");
-        int contribution = 29000; // инициализация суммы ежемесячного вклада
-        int total = 0; // инициализация первоначальной суммы накопления
-        for (int i = 1; i <= 12; i++) {
-            total = total + total / 100;
+        double contribution = 29000; // инициализация суммы ежемесячного вклада
+        double total = 0; // инициализация первоначальной суммы накопления
+        double bankInterest = 0.12; // инициализация годового банковского процента
+        double bankInterestMonth = bankInterest/12; // инициализация месячного банковского процента
+        for (int i = 1; i <=12; i++) {
+            total = total + total * bankInterestMonth;
             total = total + contribution;
             System.out.println(" Месяц " + i + ", сумма накоплений равна " + total + " рублей.");
         }
