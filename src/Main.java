@@ -95,8 +95,9 @@ public class Main {
         int namber = 2;
         int sum = 1;
         for (int i = 1; i <= 10; i++) {
-            sum = namber * i;
-            System.out.println( namber + " * " + i + " = " + sum);
+            //sum = namber * i;
+            //System.out.println( namber + " * " + i + " = " + namber * i); вариант решения с подсчетом суммы вне sout
+            System.out.println( namber + " * " + i + " = " + namber * i);
         }
     }
 }
